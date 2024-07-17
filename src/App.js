@@ -1,4 +1,5 @@
 import MovieSelect from './components/movie-select.js';
+import Legend from './components/legend.js';
 
 /**
  * App class serves to initialize and handle updates
@@ -11,6 +12,7 @@ class App {
 
     //Render movie select
     MovieSelect.render();
+    Legend.render();
   }
 }
 
