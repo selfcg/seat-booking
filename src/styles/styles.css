@@ -10,3 +10,8 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--theme-bg);
 }
+
+.seat {
+  /* border radius on topleft/topright */
+  /* default to unoccupied? */
+}
