@@ -15,13 +15,15 @@ class MovieSelect {
     selectNode.setAttribute('name', 'movies');
     selectNode.setAttribute('id', 'movies');
 
-    const movieNodes = MOVIES.map((movie) => {
+    for (const movie of MOVIES) {
       const movieNode = document.createElement('option');
       movieNode.setAttribute('value', movie.value);
-      movieNode.innerTex = `${movie.name} + ${movie.price}`;
+      movieNode.innerText = `${movie.name} ($${movie.price})`;
+      selectNode.appendChild(movieNode);
+    }
 
-      return movieNode;
-    });
+    renderNode.appendChild(labelNode);
+    renderNode.appendChild(selectNode);
   }
 }
 
