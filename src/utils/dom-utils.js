@@ -5,7 +5,7 @@ class DOMHelper {
 
   /**
    *
-   * @param {*} domNode
+   * @param {*} domNode node on which to append rendering content
    * @param {*} className
    */
   static render(domNode, className) {

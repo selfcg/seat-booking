@@ -35,3 +35,9 @@ It should be noted that I am used to Node.js for package management, and will co
 I used [this guide](https://blog.logrocket.com/node-js-project-architecture-best-practices/) to help me organize my folder layout. Since we are serving static content only (i.e., no need for any server connections or setting up middleware), no `public` folder is needed. I can see a use for a `components` (i.e., to handle the Seat class) and `utils` folder (to help abstract some DOM methods), so those will be included.
 
 I'm not sure if we will tackle unit testing yet here, but it is certainly worthy of consideration.
+
+---
+
+### Utility classes
+
+In terms of implementation, my first consideration is that we can probably implement some helper classes to make interacting with the DOM easier. This could include things like rendering elements, assigning or changing classnames, or even setting up events.
