@@ -1,0 +1,12 @@
+:root {
+  --theme-bg: #242333;
+  --theme-grey-dark: #2a2a34;
+  --theme-grey-darker: #201f2d;
+  --theme-white: #ffffff;
+  --theme-accent: #6deafe;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--theme-bg);
+}
