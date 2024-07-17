@@ -41,3 +41,7 @@ I'm not sure if we will tackle unit testing yet here, but it is certainly worthy
 ### Utility classes
 
 In terms of implementation, my first consideration is that we can probably implement some helper classes to make interacting with the DOM easier. This could include things like rendering elements, assigning or changing classnames, or even setting up events.
+
+### App.js
+
+`App.js` will initialize the application.
