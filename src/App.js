@@ -1,6 +1,7 @@
 import MovieSelect from './components/movie-select.js';
 import Legend from './components/legend.js';
 import Seats from './components/seats.js';
+import Summary from './components/summary.js';
 
 /**
  * App class serves to initialize and handle updates
@@ -15,6 +16,7 @@ class App {
     MovieSelect.render();
     Legend.render();
     Seats.render();
+    Summary.render(15, 15);
   }
 }
 

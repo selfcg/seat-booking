@@ -11,6 +11,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--theme-bg);
+  color: var(--font-grey);
 }
 
 #app-container {
@@ -88,4 +89,8 @@ body {
 .seat.occupied {
   /* white */
   background-color: var(--theme-white);
+}
+
+.highlight {
+  color: var(--theme-accent);
 }
