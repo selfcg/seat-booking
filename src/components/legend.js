@@ -15,8 +15,8 @@ class Legend {
     legendItemText.innerText = itemText;
     legendItemText.style.marginLeft = '0.5em';
 
-    const seat = new Seat(seatClass, false, legendItemNode);
-    seat.render();
+    const seat = new Seat(seatClass, false);
+    seat.render(legendItemNode);
     legendItemNode.appendChild(legendItemText);
 
     return legendItemNode;

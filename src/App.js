@@ -16,7 +16,7 @@ class App {
     MovieSelect.render();
     Legend.render();
     Seats.render();
-    Summary.render(15, 15);
+    Summary.render(15, 15); //num / price
   }
 }
 

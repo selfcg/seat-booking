@@ -56,24 +56,30 @@ body {
   line-height: 1.25em;
 }
 
-.seat-row:nth-child(2) {
-  margin-right: 16px;
-}
-
-.seat-row:nth-child(7) {
-  margin-left: 16px;
+.seat-row {
+  margin: 0.25em 0;
 }
 
 .seat {
   /* border radius on topleft/topright */
   /* default to unoccupied? */
 
-  width: 1em;
-  height: 1em;
+  width: 24px;
+  height: 24px;
 
   display: inline-block;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+
+  margin: 0 0.3em;
+}
+
+.seat:nth-child(2) {
+  margin-right: 24px;
+}
+
+.seat:nth-child(6) {
+  margin-left: 24px;
 }
 
 .seat.unoccupied {
@@ -89,6 +95,11 @@ body {
 .seat.occupied {
   /* white */
   background-color: var(--theme-white);
+}
+
+.seat.unoccupied:hover,
+.seat.selected:hover {
+  transform: scale(1.25);
 }
 
 .highlight {

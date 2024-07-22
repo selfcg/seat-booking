@@ -6,28 +6,33 @@
  * @param {string} className className used to style seat based
  * off of it's current state.
  * 	Possible states are: Unoccupied, Occupied, Selected.
- *
- * TODO: figure out how to deal with seats in the 'legend',
- * which should not have the same interactivity as those
- * in the grid. For now, we will add an 'interactable' prop.
- *
- *
  */
 
 class Seat {
-  constructor(className, interactable, parentNode) {
+  constructor(className, interactable = true) {
     this.className = className;
     this.interactable = interactable;
-    this.parentNode = parentNode;
+    this.node = null;
   }
 
-  render() {
+  render(parentNode) {
     const seatNode = document.createElement('div');
     seatNode.setAttribute('class', `seat ${this.className}`);
-    this.parentNode.appendChild(seatNode);
+    seatNode.addEventListener('click', this.handleClick.bind(this));
+    this.node = seatNode;
+    parentNode.appendChild(seatNode);
   }
 
-  assignClass() {}
+  handleClick() {
+    console.log(this.interactable);
+    if (this.node.classList.contains('unoccupied')) {
+      this.node.classList.remove('unoccupied');
+      this.node.classList.add('selected');
+    } else if (this.node.classList.contains('selected')) {
+      this.node.classList.remove('selected');
+      this.node.classList.add('unoccupied');
+    }
+  }
 }
 
 export default Seat;
