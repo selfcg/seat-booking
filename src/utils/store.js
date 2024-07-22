@@ -4,6 +4,7 @@
 
 class Store {
   constructor(state) {
+    //make sure state is an objectS
     this.state = state;
   }
 
@@ -26,6 +27,9 @@ class Store {
    * @returns value associated with key
    */
   getItem(key) {
-    return this.state.key;
+    //could do more validation here but we have a very simple program
+    return this.state['key'];
   }
 }
+
+export default Store;
